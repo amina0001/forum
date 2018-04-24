@@ -43,6 +43,10 @@ Route::get('liste','ContactController@afficherContact');
 Route::get('info/{name}','ContactController@afficherinfoContact');
 Route::get('delete/{name}','ContactController@deleteinfoContact');
 
+Route::get('ter','EmailsController@testEmailRaw');
+Route::get('tec','EmailsController@testEmailClassique');
+Route::get('tem','EmailsController@testEmailable');
+
 //Route::get('/test', function () {
 //	$name=DB::Table('peoples')->get();
  //  dd($name);
